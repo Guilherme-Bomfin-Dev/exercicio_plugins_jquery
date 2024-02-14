@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <form id="formulario">
+<div>
+    <label for="nome">NOME COMPLETO:</label>
+        <input type="text" id="input_nome" required placeholder=" COLOQUE SEU NOME COMPLETO AQUI ! "/>
+</div>
+        
+        <div>
+        <label for="email">E-MAIL:</label>
+        <input type="email" id="input_email" required placeholder=" COLOQUE SEU E-MAIL AQUI ! "/>
+        </div>
+
+        <div>
+        <label for="telefone">TELEFONE:</label>
+        <input type="tel" id="telefone" placeholder=" COLOQUE SEU TELEFONE AQUI ! ">
+        </div>
+
+        <div>
+        <label for="cpf">CPF: </label>
+        <input type="text" id="cpf" placeholder=" COLOQUE SEU CPF AQUI ! "/>
+        </div>
+
+        <div>
+        <label for="endereco">ENDEREÇO COMPLETO: </label>
+        <input type="text" id="input_telefone" required placeholder=" COLOQUE SEU ENDEREÇO COMPLETO AQUI ! "/>
+        </div>
+
+        <div>
+        <label for="cep"> CEP: </label>
+        <input type="text" id="cep" required placeholder=" COLOQUE SEU CEP AQUI ! "/>
+        </div>
+        
+        
+        
+        </form>
+        <div>
+            <button type="button"> Enviar </button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#telefone').mask('(00) 00000-0000')
+        $('#cpf').mask('000.000.000-00')
+        $('#cep').mask('00000-000')
+    })
+    </script>
+    
+
+</body>
+</html>

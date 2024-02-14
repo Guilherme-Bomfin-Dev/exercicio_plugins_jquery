@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(37, 231, 134);
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display:block;
+    justify-content:end;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(23, 141, 82);
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    display: inline-block;
+    width: 65%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button{
+    color: rgb(233, 7, 7);
+    font-weight: bold;
+    
+}
+
+input {
+    color: blue;
+}
